@@ -5,8 +5,9 @@ import os
 # --- Configuration ---
 # Ensure this is the correct URL and port for your n8n instance
 N8N_HOST = "http://localhost:5678"
-# Your n8n API key
-API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MTVkZmE3OC0yOTQ5LTQ1MjEtOWRmZC1kNTU1YzBkZThjMGIiLCJpc3MiOiJuOG4iLCJhdWQiOiJwdWJsaWMtYXBpIiwiaWF0IjoxNzUzMjEwODQwLCJleHAiOjE3NTU3NDg4MDB9.tNwrTlY-f4q_WZIXdvMf_YuKkPGxz26LUM0c26A-_NM"
+# API key for n8n from environment variables.
+
+API_KEY = os.getenv("N8N_API_KEY")
 
 # --- Data Storage Configuration ---
 DATA_DIR = "data"
